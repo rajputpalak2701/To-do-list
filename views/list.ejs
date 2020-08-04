@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>To do work</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="box" id="heading">
+    <h1>It's <%= todayDay  %> Today!</h1>
+  </div>
+
+  <div class="box">
+    <h1><strong>Write Here & Complete Your Task</strong></h1>
+
+    <%for(i=0;i<newItem.length;i++){%>
+    <div class="item">
+      <input type="checkbox" >
+      <p><%= newItem[i] %></p>
+    </div>
+    <%}%>
+    <form class="" action="/" method="post">
+        <input type="text" name="item" placeholder="Item Name" >
+        <button type="submit" name="submit">+</button>
+    </form>
+    </div>
+
+
+  </body>
+</html>
